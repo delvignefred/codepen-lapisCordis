@@ -153,8 +153,8 @@ body {
       &.hand__polyphemus-clone {
         & > article {
           & > span {
-            block-size: inherit;
-            inline-size: inherit;
+            block-size: 100%;
+            inline-size: 100%;
 
             position: absolute;
             border-radius: 5% 5% 0 0;
@@ -438,8 +438,8 @@ body {
       &.hand__nyx {
         & > article {
           &::after {
-            block-size: inherit;
-            inline-size: inherit;
+            block-size: 100%;
+            inline-size: 100%;
 
             content: "";
             position: absolute;
