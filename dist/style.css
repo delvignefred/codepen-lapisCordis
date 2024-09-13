@@ -50,8 +50,8 @@ body {
   cursor: url("./assets/cursor.png"), pointer;
 
   & .hand {
-    width: inherit;
-    height: inherit;
+    inline-size: inherit;
+    block-size: inherit;
 
     display: flex;
     justify-content: center;
@@ -62,8 +62,8 @@ body {
 
     /* ✑ transparent curtain that appears between the cards on the table and the one in your hand, when you click on one of them */
     & .hand__curtain {
-      width: inherit;
-      height: inherit;
+      inline-size: inherit;
+      block-size: inherit;
 
       display: none;
 
@@ -79,7 +79,7 @@ body {
     }
 
     & section {
-      width: 46dvmin;
+      inline-size: 46dvmin;
       aspect-ratio: 5 / 7;
 
       border-radius: 5%;
@@ -93,8 +93,8 @@ body {
       transition: transform 0.6s ease-out, filter 0.6s ease-out;
 
       & article {
-        width: 90%;
-        height: 65%;
+        inline-size: 90%;
+        block-size: 65%;
 
         border-radius: 5% 5% 0 0;
         position: absolute;
@@ -103,8 +103,8 @@ body {
         box-shadow: inset 0dvmin 0dvmin 12dvmin -6dvmin var(--system-color-dark);
 
         &::before {
-          width: 110%;
-          height: 35%;
+          inline-size: 110%;
+          block-size: 35%;
 
           content: "";
           position: absolute;
@@ -119,8 +119,8 @@ body {
       }
 
       & aside {
-        width: 90%;
-        height: 35%;
+        inline-size: 90%;
+        block-size: 35%;
 
         position: absolute;
         z-index: 4;
@@ -153,8 +153,8 @@ body {
       &.hand__polyphemus-clone {
         & > article {
           & > span {
-            height: inherit;
-            width: inherit;
+            block-size: inherit;
+            inline-size: inherit;
 
             position: absolute;
             border-radius: 5% 5% 0 0;
@@ -185,8 +185,8 @@ body {
         background-color: var(--system-color-card-polyphemus);
 
         &::after {
-          width: 17%;
-          height: 11.9%;
+          inline-size: 17%;
+          block-size: 11.9%;
 
           content: "";
           position: absolute;
@@ -232,8 +232,8 @@ body {
             no-repeat 50% 0% / 100%;
 
           &::before {
-            width: 110%;
-            height: 35%;
+            inline-size: 110%;
+            block-size: 35%;
 
             content: "";
             position: absolute;
@@ -247,8 +247,8 @@ body {
 
         & > aside {
           &::before {
-            width: 36%;
-            height: 66%;
+            inline-size: 36%;
+            block-size: 66%;
 
             content: "";
             position: absolute;
@@ -260,8 +260,8 @@ body {
           }
 
           &::after {
-            width: 66%;
-            height: 66%;
+            inline-size: 66%;
+            block-size: 66%;
 
             content: "";
             position: absolute;
@@ -280,8 +280,8 @@ body {
         background-color: var(--system-color-card-andromeda);
 
         &::after {
-          width: 17%;
-          height: 11.9%;
+          inline-size: 17%;
+          block-size: 11.9%;
 
           content: "";
           position: absolute;
@@ -319,8 +319,8 @@ body {
             no-repeat 50% 0% / 100%;
 
           &::before {
-            width: 110%;
-            height: 35%;
+            inline-size: 110%;
+            block-size: 35%;
 
             content: "";
             position: absolute;
@@ -334,8 +334,8 @@ body {
 
         & > aside {
           &::after {
-            width: 66%;
-            height: 66%;
+            inline-size: 66%;
+            block-size: 66%;
 
             content: "";
             position: absolute;
@@ -354,8 +354,8 @@ body {
         background-color: var(--system-color-card-cerberus);
 
         &::after {
-          width: 17%;
-          height: 11.9%;
+          inline-size: 17%;
+          block-size: 11.9%;
 
           content: "";
           position: absolute;
@@ -393,8 +393,8 @@ body {
             no-repeat 50% 0% / 100%;
 
           &::before {
-            width: 110%;
-            height: 35%;
+            inline-size: 110%;
+            block-size: 35%;
 
             content: "";
             position: absolute;
@@ -408,8 +408,8 @@ body {
 
         & > aside {
           &::after {
-            width: 66%;
-            height: 66%;
+            inline-size: 66%;
+            block-size: 66%;
 
             content: "";
             position: absolute;
@@ -421,8 +421,8 @@ body {
           }
 
           &::before {
-            width: 36%;
-            height: 66%;
+            inline-size: 36%;
+            block-size: 66%;
 
             content: "";
             position: absolute;
@@ -438,8 +438,8 @@ body {
       &.hand__nyx {
         & > article {
           &::after {
-            height: inherit;
-            width: inherit;
+            block-size: inherit;
+            inline-size: inherit;
 
             content: "";
             position: absolute;
@@ -464,8 +464,8 @@ body {
       &.hand__nyx-clone {
         & > article {
           & > span {
-            height: inherit;
-            width: inherit;
+            block-size: inherit;
+            inline-size: inherit;
 
             position: absolute;
             border-radius: 5% 5% 0 0;
@@ -495,8 +495,8 @@ body {
         background-color: var(--system-color-card-nyx);
 
         &::after {
-          width: 17%;
-          height: 11.9%;
+          inline-size: 17%;
+          block-size: 11.9%;
 
           content: "";
           position: absolute;
@@ -543,8 +543,8 @@ body {
             var(--system-color-dark) no-repeat 20% 0% / 88%;
 
           &::before {
-            width: 110%;
-            height: 35%;
+            inline-size: 110%;
+            block-size: 35%;
 
             content: "";
             position: absolute;
@@ -558,8 +558,8 @@ body {
 
         & > aside {
           &::after {
-            width: 66%;
-            height: 66%;
+            inline-size: 66%;
+            block-size: 66%;
 
             content: "";
             position: absolute;
@@ -579,8 +579,8 @@ body {
         background-color: var(--system-color-card-horse);
 
         &::after {
-          width: 17%;
-          height: 11.9%;
+          inline-size: 17%;
+          block-size: 11.9%;
 
           content: "";
           position: absolute;
@@ -620,8 +620,8 @@ body {
             no-repeat 0% 0% / 100%;
 
           &::before {
-            width: 110%;
-            height: 35%;
+            inline-size: 110%;
+            block-size: 35%;
 
             content: "";
             position: absolute;
@@ -635,8 +635,8 @@ body {
 
         & > aside {
           &::after {
-            width: 66%;
-            height: 66%;
+            inline-size: 66%;
+            block-size: 66%;
 
             content: "";
             position: absolute;
