@@ -654,7 +654,7 @@ body {
   & #logo {
     inline-size: 8dvmin;
     aspect-ratio: 1;
-    position: absolute;
+    position: fixed;
     inset: auto 1.6dvmin 1.6dvmin auto;
 
     -webkit-filter: saturate(0%);
