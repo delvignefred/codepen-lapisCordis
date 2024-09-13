@@ -464,8 +464,8 @@ body {
       &.hand__nyx-clone {
         & > article {
           & > span {
-            block-size: inherit;
-            inline-size: inherit;
+            block-size: 100%;
+            inline-size: 100%;
 
             position: absolute;
             border-radius: 5% 5% 0 0;
