@@ -30,8 +30,8 @@
 }
 
 body {
-  width: 100dvw;
-  height: 100dvh;
+  inline-size: 100dvw;
+  block-size: 100dvh;
 
   background-color: var(--system-color-canvas);
   overflow: hidden;
