@@ -647,35 +647,36 @@ body {
       }
     }
   }
+  & footer {
+    & #logo {
+      inline-size: 8dvmin;
+      aspect-ratio: 1;
+      position: fixed;
+      inset: auto 1.6dvmin 1.6dvmin auto;
 
-  & #logo {
-    inline-size: 8dvmin;
-    aspect-ratio: 1;
-    position: fixed;
-    inset: auto 1.6dvmin 1.6dvmin auto;
+      -webkit-filter: saturate(0%);
+      filter: saturate(0%);
+      opacity: 0.3;
 
-    -webkit-filter: saturate(0%);
-    filter: saturate(0%);
-    opacity: 0.3;
+      transition: opacity 0.6s ease-out, filter 0.6s ease-out;
+      /* ☛ ⚠ cursor max size 128px*128px */
+      cursor: url("./assets/cursor.png"), pointer;
 
-    transition: opacity 0.6s ease-out, filter 0.6s ease-out;
-    /* ☛ ⚠ cursor max size 128px*128px */
-    cursor: url("./assets/cursor.png"), pointer;
+      & circle {
+        -webkit-fill: var(--system-color-logo);
+        fill: var(--system-color-logo);
+      }
 
-    & circle {
-      -webkit-fill: var(--system-color-logo);
-      fill: var(--system-color-logo);
-    }
+      & path {
+        -webkit-fill: var(--system-color-light);
+        fill: var(--system-color-light);
+      }
 
-    & path {
-      -webkit-fill: var(--system-color-light);
-      fill: var(--system-color-light);
-    }
-    
-    &:hover {
-      -webkit-filter: saturate(100%);
-      filter: saturate(100%);
-      opacity: 1;
+      &:hover {
+        -webkit-filter: saturate(100%);
+        filter: saturate(100%);
+        opacity: 1;
+      }
     }
   }
 }
