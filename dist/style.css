@@ -536,8 +536,7 @@ body {
             var(--system-color-dark) no-repeat 20% 0% / 88%;
 
           background: image-set(
-            url("./assets/nyx.webp")
-                1x,
+              url("./assets/nyx.webp") 1x,
               url("./assets/nyx-hd.webp") 2x
             )
             var(--system-color-dark) no-repeat 20% 0% / 88%;
@@ -606,15 +605,13 @@ body {
 
         & > article {
           background: -webkit-image-set(
-            url("./assets/horse.webp")
-                1x,
+              url("./assets/horse.webp") 1x,
               url("./assets/horse-hd.webp") 2x
             )
             no-repeat 0% 0% / 100%;
 
           background: image-set(
-            url("./assets/horse.webp")
-                1x,
+              url("./assets/horse.webp") 1x,
               url("./assets/horse-hd.webp") 2x
             )
             no-repeat 0% 0% / 100%;
@@ -674,9 +671,7 @@ body {
       -webkit-fill: var(--system-color-light);
       fill: var(--system-color-light);
     }
-  }
-
-  & #logo {
+    
     &:hover {
       -webkit-filter: saturate(100%);
       filter: saturate(100%);
