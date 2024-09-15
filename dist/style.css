@@ -50,8 +50,8 @@ body {
   cursor: url("./assets/cursor.png"), pointer;
 
   & .hand {
-    inline-size: inherit;
-    block-size: inherit;
+    inline-size: 100%;
+    block-size: 100%;
 
     display: flex;
     justify-content: center;
@@ -62,8 +62,8 @@ body {
 
     /* ✑ transparent curtain that appears between the cards on the table and the one in your hand, when you click on one of them */
     & .hand__curtain {
-      inline-size: inherit;
-      block-size: inherit;
+      inline-size: 100%;
+      block-size: 100%;
 
       display: none;
 
