@@ -220,14 +220,14 @@ body {
 
         & > article {
           background: -webkit-image-set(
-              url("./assets/polyphemus.webp") 1x,
-              url("./assets/polyphemus-hd.webp") 2x
+              url("./assets/polyphemus.avif") 1x,
+              url("./assets/polyphemus-hd.avif") 2x
             )
             no-repeat 50% 0% / 100%;
 
           background: image-set(
-              url("./assets/polyphemus.webp") 1x,
-              url("./assets/polyphemus-hd.webp") 2x
+              url("./assets/polyphemus.avif") 1x,
+              url("./assets/polyphemus-hd.avif") 2x
             )
             no-repeat 50% 0% / 100%;
 
@@ -307,14 +307,14 @@ body {
 
         & > article {
           background: -webkit-image-set(
-              url("./assets/andromeda.webp") 1x,
-              url("./assets/andromeda-hd.webp") 2x
+              url("./assets/andromeda.avif") 1x,
+              url("./assets/andromeda-hd.avif") 2x
             )
             no-repeat 50% 0% / 100%;
 
           background: image-set(
-              url("./assets/andromeda.webp") 1x,
-              url("./assets/andromeda-hd.webp") 2x
+              url("./assets/andromeda.avif") 1x,
+              url("./assets/andromeda-hd.avif") 2x
             )
             no-repeat 50% 0% / 100%;
 
@@ -381,14 +381,14 @@ body {
 
         & > article {
           background: -webkit-image-set(
-              url("./assets/cerberus.webp") 1x,
-              url("./assets/cerberus-hd.webp") 2x
+              url("./assets/cerberus.avif") 1x,
+              url("./assets/cerberus-hd.avif") 2x
             )
             no-repeat 50% 0% / 100%;
 
           background: image-set(
-              url("./assets/cerberus.webp") 1x,
-              url("./assets/cerberus-hd.webp") 2x
+              url("./assets/cerberus.avif") 1x,
+              url("./assets/cerberus-hd.avif") 2x
             )
             no-repeat 50% 0% / 100%;
 
@@ -445,14 +445,14 @@ body {
             position: absolute;
 
             background: -webkit-image-set(
-                url("./assets/nyx-vfx-origin.webp") 1x,
-                url("./assets/nyx-vfx-origin-hd.webp") 2x
+                url("./assets/nyx-vfx-origin.avif") 1x,
+                url("./assets/nyx-vfx-origin-hd.avif") 2x
               )
               no-repeat 50% 0% / 100%;
 
             background: image-set(
-                url("./assets/nyx-vfx-origin.webp") 1x,
-                url("./assets/nyx-vfx-origin-hd.webp") 2x
+                url("./assets/nyx-vfx-origin.avif") 1x,
+                url("./assets/nyx-vfx-origin-hd.avif") 2x
               )
               no-repeat 50% 0% / 100%;
 
@@ -530,14 +530,14 @@ body {
 
         & > article {
           background: -webkit-image-set(
-              url("./assets/nyx.webp") 1x,
-              url("./assets/nyx-hd.webp") 2x
+              url("./assets/nyx.avif") 1x,
+              url("./assets/nyx-hd.avif") 2x
             )
             var(--system-color-dark) no-repeat 20% 0% / 88%;
 
           background: image-set(
-              url("./assets/nyx.webp") 1x,
-              url("./assets/nyx-hd.webp") 2x
+              url("./assets/nyx.avif") 1x,
+              url("./assets/nyx-hd.avif") 2x
             )
             var(--system-color-dark) no-repeat 20% 0% / 88%;
 
@@ -605,14 +605,14 @@ body {
 
         & > article {
           background: -webkit-image-set(
-              url("./assets/horse.webp") 1x,
-              url("./assets/horse-hd.webp") 2x
+              url("./assets/horse.avif") 1x,
+              url("./assets/horse-hd.avif") 2x
             )
             no-repeat 0% 0% / 100%;
 
           background: image-set(
-              url("./assets/horse.webp") 1x,
-              url("./assets/horse-hd.webp") 2x
+              url("./assets/horse.avif") 1x,
+              url("./assets/horse-hd.avif") 2x
             )
             no-repeat 0% 0% / 100%;
 
