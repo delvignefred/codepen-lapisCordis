@@ -162,14 +162,14 @@ body {
 
           & .polyphemus-clone-vfx.vfx--visible {
             background: -webkit-image-set(
-                url("./assets/fire.webm") 1x,
-                url("./assets/fire-hd.webm") 2x
+                url("./assets/fire.gif") 1x,
+                url("./assets/fire-hd.gif") 2x
               )
               no-repeat 50% 0% / 100%;
 
             background: image-set(
-                url("./assets/fire.webm") 1x,
-                url("./assets/fire-hd.webm") 2x
+                url("./assets/fire.gif") 1x,
+                url("./assets/fire-hd.gif") 2x
               )
               no-repeat 50% 0% / 100%;
 
@@ -473,14 +473,14 @@ body {
 
           & .nyx-clone-vfx.vfx--visible {
             background: -webkit-image-set(
-                url("./assets/nyx-vfx-clone.webm") 1x,
-                url("./assets/nyx-vfx-clone-hd.webm") 2x
+                url("./assets/nyx-vfx-clone.gif") 1x,
+                url("./assets/nyx-vfx-clone-hd.gif") 2x
               )
               no-repeat 50% 0% / 100%;
 
             background: image-set(
-                url("./assets/nyx-vfx-clone.webm") 1x,
-                url("./assets/nyx-vfx-clone-hd.webm") 2x
+                url("./assets/nyx-vfx-clone.gif") 1x,
+                url("./assets/nyx-vfx-clone-hd.gif") 2x
               )
               no-repeat 50% 0% / 100%;
 
