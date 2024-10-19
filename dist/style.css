@@ -161,18 +161,8 @@ body {
           }
 
           & .polyphemus-clone-vfx.vfx--visible {
-            background: -webkit-image-set(
-                url("./assets/fire.gif") 1x,
-                url("./assets/fire-hd.gif") 2x
-              )
-              no-repeat 50% 0% / 100%;
-
-            background: image-set(
-                url("./assets/fire.gif") 1x,
-                url("./assets/fire-hd.gif") 2x
-              )
-              no-repeat 50% 0% / 100%;
-
+            background: url("./assets/fire-hd.gif") no-repeat 50% 0% / 100%;
+            
             mix-blend-mode: screen;
           }
         }
@@ -472,17 +462,7 @@ body {
           }
 
           & .nyx-clone-vfx.vfx--visible {
-            background: -webkit-image-set(
-                url("./assets/nyx-vfx-clone.gif") 1x,
-                url("./assets/nyx-vfx-clone-hd.gif") 2x
-              )
-              no-repeat 50% 0% / 100%;
-
-            background: image-set(
-                url("./assets/nyx-vfx-clone.gif") 1x,
-                url("./assets/nyx-vfx-clone-hd.gif") 2x
-              )
-              no-repeat 50% 0% / 100%;
+            background: url("./assets/nyx-vfx-clone-hd.gif") no-repeat 50% 0% / 100%;
 
             mix-blend-mode: screen;
           }
