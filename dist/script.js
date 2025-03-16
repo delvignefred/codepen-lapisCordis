@@ -1,23 +1,21 @@
 // lazy loading VFX
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   const lazyBackgrounds = [].slice.call(document.querySelectorAll("span"));
 
   if ("IntersectionObserver" in window) {
-    let lazyBackgroundObserver = new IntersectionObserver(function (
-      entries,
-      observer
-    ) {
-      entries.forEach(function (entry) {
+    const lazyBackgroundObserver = new IntersectionObserver((entries, observer) => {
+      for (let i = 0; i < entries.length; i++) {
+        const entry = entries[i];
         if (entry.isIntersecting) {
           entry.target.classList.add("vfx--visible");
           lazyBackgroundObserver.unobserve(entry.target);
         }
-      });
+      }
     });
 
-    lazyBackgrounds.forEach(function (lazyBackground) {
-      lazyBackgroundObserver.observe(lazyBackground);
-    });
+    for (let i = 0; i < lazyBackgrounds.length; i++) {
+      lazyBackgroundObserver.observe(lazyBackgrounds[i]);
+    }
   }
 });
 
@@ -55,25 +53,32 @@ const handleCardClick = (card, clone, event) => {
   clone.classList.add("card--visible");
 };
 
-cardSet.forEach(({ card, clone }) => {
+for (let i = 0; i < cardSet.length; i++) {
+  const { card, clone } = cardSet[i];
   card.addEventListener("click", (event) =>
     handleCardClick(card, clone, event)
   );
-});
+}
 
 canvas.addEventListener("click", () => {
-  cardSet.forEach(({ clone }) => clone.classList.remove("card--visible"));
+  for (let i = 0; i < cardSet.length; i++) {
+    const { clone } = cardSet[i];
+    clone.classList.remove("card--visible");
+  }
   curtain.classList.remove("curtain--visible");
-  cardSet.forEach(({ card }) => card.classList.remove("card--hidden"));
+  for (let i = 0; i < cardSet.length; i++) {
+    const { card } = cardSet[i];
+    card.classList.remove("card--hidden");
+  }
 });
 
 // mobile friendly script
 /*
-cardSet.forEach(({ card }) => {
+for (let i = 0; i < cardSet.length; i++) {
+  const { card } = cardSet[i];
   card.addEventListener("mouseover", () =>
     card.classList.add("card--touched")
   );
-
 
   card.addEventListener("touchstart", () =>
     card.classList.add("card--touched")
@@ -81,5 +86,5 @@ cardSet.forEach(({ card }) => {
   card.addEventListener("touchend", () =>
     card.classList.remove("card--touched")
   );
-});
+}
 */
