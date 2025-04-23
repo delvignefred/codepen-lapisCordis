@@ -4,18 +4,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if ("IntersectionObserver" in window) {
     const lazyBackgroundObserver = new IntersectionObserver((entries, observer) => {
-      for (let i = 0; i < entries.length; i++) {
-        const entry = entries[i];
+      entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add("vfx--visible");
           lazyBackgroundObserver.unobserve(entry.target);
         }
-      }
+      });
     });
 
-    for (let i = 0; i < lazyBackgrounds.length; i++) {
-      lazyBackgroundObserver.observe(lazyBackgrounds[i]);
-    }
+    lazyBackgrounds.forEach(background => {
+      lazyBackgroundObserver.observe(background);
+    });
   }
 });
 
@@ -53,29 +52,25 @@ const handleCardClick = (card, clone, event) => {
   clone.classList.add("card--visible");
 };
 
-for (let i = 0; i < cardSet.length; i++) {
-  const { card, clone } = cardSet[i];
+cardSet.forEach(({ card, clone }) => {
   card.addEventListener("click", (event) =>
     handleCardClick(card, clone, event)
   );
-}
+});
 
 canvas.addEventListener("click", () => {
-  for (let i = 0; i < cardSet.length; i++) {
-    const { clone } = cardSet[i];
+  cardSet.forEach(({ clone }) => {
     clone.classList.remove("card--visible");
-  }
+  });
   curtain.classList.remove("curtain--visible");
-  for (let i = 0; i < cardSet.length; i++) {
-    const { card } = cardSet[i];
+  cardSet.forEach(({ card }) => {
     card.classList.remove("card--hidden");
-  }
+  });
 });
 
 // mobile friendly script
 /*
-for (let i = 0; i < cardSet.length; i++) {
-  const { card } = cardSet[i];
+cardSet.forEach(({ card }) => {
   card.addEventListener("mouseover", () =>
     card.classList.add("card--touched")
   );
@@ -86,5 +81,5 @@ for (let i = 0; i < cardSet.length; i++) {
   card.addEventListener("touchend", () =>
     card.classList.remove("card--touched")
   );
-}
+});
 */
